@@ -4,9 +4,9 @@ from uzduotis1 import skaiciu_suma, didziausias_skaicius, sakinys_atvirksciai, a
 class TestUzduotis1(unittest.TestCase):
 
     def test_skaiciu_suma(self):
-        self.assertEqual(skaiciu_suma(2, 6, 4, 78, 1, 454, 30, 68), 643)
-        self.assertEqual(skaiciu_suma(-2, 6, -4, -78, 1, 454, 0, 68), 445)
-        self.assertEqual(skaiciu_suma(-1000, 1000), 0)
+        self.assertEqual(643, skaiciu_suma(2, 6, 4, 78, 1, 454, 30, 68))
+        self.assertEqual(445, skaiciu_suma(-2, 6, -4, -78, 1, 454, 0, 68))
+        self.assertEqual(0, skaiciu_suma(-1000, 1000))
 
 
     def test_didziausias_skaicius(self):
